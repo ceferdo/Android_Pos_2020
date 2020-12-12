@@ -1,5 +1,6 @@
 package com.aula.pos
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -13,20 +14,23 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         calculo.setOnClickListener{
+            val intent = Intent(this@MainActivity, ResultadoActivity::class.java)
+            startActivity(intent)
 
-            val gasolina = (valorGasolina.text.toString()).toDouble()
-            val alcool = (valorAlcool.text.toString()).toDouble()
 
-            val calculo = gasolina * 0.7
-
-            if (calculo > alcool) {
-                resultado.text = "Alcool é melhor"
-            } else {
-                resultado.text = "Gasolina é melhor"
-            }
-
-            Toast.makeText(this@MainActivity, "Apertei o login", Toast.LENGTH_LONG).show();
-            Log.i("Mobile" , "Cliquei no botão");
+//            val gasolina = (valorGasolina.text.toString()).toDouble()
+//            val alcool = (valorAlcool.text.toString()).toDouble()
+//
+//            val calculo = gasolina * 0.7
+//
+//            if (calculo > alcool) {
+//                resultado.text = "Alcool é melhor"
+//            } else {
+//                resultado.text = "Gasolina é melhor"
+//            }
+//
+//            Toast.makeText(this@MainActivity, "Apertei o login", Toast.LENGTH_LONG).show();
+//            Log.i("Mobile" , "Cliquei no botão");
         }
     }
 }
