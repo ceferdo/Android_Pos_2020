@@ -10,10 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pos2020">
         <activity
+            android:name=".LinhaListaActivity"
+            android:label="@string/title_activity_linha_lista"
+            android:theme="@style/Theme.Pos2020.NoActionBar"></activity>
+        <activity
+            android:name=".PaisesActivity"
+            android:label="@string/title_activity_paises"
+            android:theme="@style/Theme.Pos2020.NoActionBar" />
+        <activity android:name=".ListaActivity" />
+        <activity
             android:name=".ResultadoActivity"
             android:label="@string/title_activity_resultado"
-            android:theme="@style/Theme.Pos2020.NoActionBar"></activity>
-        <!-- <activity -->
+            android:theme="@style/Theme.Pos2020.NoActionBar" /> <!-- <activity -->
         <!-- android:name=".CicloVidaActivity" -->
         <!-- android:label="@string/title_activity_ciclo_vida" -->
         <!-- android:theme="@style/Theme.Pos2020.NoActionBar"></activity> -->

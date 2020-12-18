@@ -11,4 +11,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_ciclo_vida">CicloVidaActivity</string>
     <string name="title_activity_resultado">ResultadoActivity</string>
+    <string name="title_activity_paises">PaisesActivity</string>
+    <string name="title_activity_linha_lista">LinhaListaActivity</string>
 </resources>
